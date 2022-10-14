@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/crypto-register/static/css/main.a128d683.css",
+    "main.js": "/crypto-register/static/js/main.2c1f7da3.js",
+    "static/js/787.cda612ba.chunk.js": "/crypto-register/static/js/787.cda612ba.chunk.js",
+    "index.html": "/crypto-register/index.html",
+    "main.a128d683.css.map": "/crypto-register/static/css/main.a128d683.css.map",
+    "main.2c1f7da3.js.map": "/crypto-register/static/js/main.2c1f7da3.js.map",
+    "787.cda612ba.chunk.js.map": "/crypto-register/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a128d683.css",
+    "static/js/main.2c1f7da3.js"
+  ]
+}
