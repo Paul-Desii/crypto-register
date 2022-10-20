@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useCryptoContext from "./hooks/useCryptoContext";
 import { useAuthContext } from "./hooks/useAuthContext";
 
+
 const CryptoForm = () => {
     const { dispatch } = useCryptoContext()
     //14.b.
@@ -12,16 +13,18 @@ const CryptoForm = () => {
     const [error, setError] = useState(null)
     const [emptyFields, setEmptyFields] = useState([])
 
+
     const handleClick = async (event) => {
         event.preventDefault()
 
-        //14.b. making authorized requests;also the authorization header in line 31
+            //14.b. making authorized requests;also the authorization header in line 31
         if (!user) {
             setError('You must be logged in.')
             return
         }
 
         const crypto = {token, amount}
+        
 
         const response = await fetch('/api/cryptos',{
             method: 'POST',
@@ -46,6 +49,8 @@ const CryptoForm = () => {
                 console.log("New transactions made", json);
                 dispatch({type: 'CREATE_TRANSACTIONS', payload: json})
             }
+
+        
     }
 
     return (
@@ -66,11 +71,7 @@ const CryptoForm = () => {
                 value={amount}
                 className={emptyFields.includes('amount') ? 'error' : ''}
             />
-
-            <div>
-                <button>Buy</button>
-                <button>Sell</button>
-            </div>
+                <button>Bought</button>
             {error && <div className="error">{error}</div>}
             
             </form>

@@ -9,12 +9,12 @@ const Home = () => {
 
     const {cryptos, dispatch} = useCryptoContext()
     //14.a. Making authorized requests; also the authorization headers in fetch fn in line 17
-    const user = useAuthContext()
+    const { user } = useAuthContext()
 
     
     useEffect(() => {
         const fetchCryptos = async () => {
-            const response = await fetch('http://localhost:10000/api/cryptos', {
+            const response = await fetch('/api/cryptos', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }

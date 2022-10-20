@@ -8,7 +8,7 @@ import Login from './Pages/Login'
 
 function App() {
   //15.a. Protecting React routes with the conditionals in lines 20, 24, 28.
-  const user = useAuthContext()
+  const { user } = useAuthContext()
   return (
     <div className="App">
       <BrowserRouter>

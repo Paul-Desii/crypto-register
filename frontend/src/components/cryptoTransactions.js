@@ -6,6 +6,7 @@ import { useAuthContext } from "./hooks/useAuthContext";
 const CryptoDetails = ({crypto}) => {
     const { dispatch } = useCryptoContext()
     const { user } = useAuthContext()
+    
 
     const handleClick = async () => {
         //14.c. Making authorized requests;also the authorization header in line 16

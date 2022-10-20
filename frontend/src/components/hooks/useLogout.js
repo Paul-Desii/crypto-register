@@ -3,7 +3,7 @@ import { useAuthContext } from "./useAuthContext";
 import useCryptoContext from "./useCryptoContext"
 
 export const useLogout= () => {
-    const dispatch = useAuthContext()
+    const { dispatch } = useAuthContext()
     const { dispatch: cryptoDispatch } = useCryptoContext() //16.d.
 
     const logout = () => {

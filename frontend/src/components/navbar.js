@@ -6,7 +6,7 @@ import { useAuthContext } from './hooks/useAuthContext';
 const Navbar = () => {
 
     //11.a. Setting the initial auth status 
-    const user = useAuthContext() //used in lines 24, 25 and 29
+    const { user } = useAuthContext() //used in lines 24, 25 and 29
 
     //9.b. useLogout
     const {logout} = useLogout()
