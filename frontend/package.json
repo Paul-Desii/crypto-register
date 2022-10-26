@@ -1,6 +1,6 @@
 {
   "proxy": "http://localhost:10000",
-  "homepage": "https://Paul-Desii.github.io/crypto-register",
+  "homepage": "https://Paul-Desii.github.io/#/crypto-register",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
