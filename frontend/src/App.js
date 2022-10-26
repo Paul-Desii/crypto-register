@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+import { Route, Routes, Navigate, HashRouter } from 'react-router-dom'
 import { useAuthContext } from './components/hooks/useAuthContext'
 import Navbar from './components/navbar'
 import Home from '../src/Pages/home'
@@ -11,7 +11,7 @@ function App() {
   const { user } = useAuthContext()
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <div className='pages'>
           <Routes>
@@ -30,7 +30,7 @@ function App() {
           </Routes>
 
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
