@@ -10,11 +10,13 @@ import { HashRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <HashRouter>
     <AuthContextProvider>
       <CryptoContextProvider>
         <App />
       </CryptoContextProvider>
     </AuthContextProvider>
+    </HashRouter>
   </React.StrictMode>
 );
 
